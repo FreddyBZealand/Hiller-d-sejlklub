@@ -16,7 +16,8 @@ namespace Hillerød_sejlklub
         public string _name;
         public string _description;
         public bool _sailing;
-
+        // Vi skal bruge id, navn og beskrivelse på båd for at finde den, bool er til at se om den er ledig el ej.
+        
         #endregion
 
         #region Constructor
@@ -40,12 +41,19 @@ namespace Hillerød_sejlklub
 
         #region Properties
         private int Id 
-        { get { return _id; } }
+        { get { return _id; } 
+          set { _id = value; }
+        }
         private string Name 
-        { get { return _name; } }
+        { get { return _name; } 
+          set { _name = value; }
+        
+        }
         private string Description 
-        { get { return _description; } }
-
+        { get { return _description; }
+          set { _description = value; }
+        }
+        
 
 
         #endregion
@@ -55,7 +63,7 @@ namespace Hillerød_sejlklub
         {
             return $"name : {Name} - id : {Id} - description : {Description}";  
         }
-        
+        // Metode til at få vores oplysninger
         #endregion
     }
 

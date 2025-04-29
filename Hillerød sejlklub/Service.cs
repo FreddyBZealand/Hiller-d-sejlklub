@@ -14,7 +14,7 @@ namespace Hillerød_sejlklub
         public string _name;
         public string _type;
 
-
+        //Vi skal bruge de forskellige oplysninger for at kende båd og vide hvad der skal laves
         #endregion
 
         #region Constructor
@@ -56,6 +56,7 @@ namespace Hillerød_sejlklub
         {
             return $"damage : {damage}, id : {id}, name : {name}, type : {type}";
         }
+        //Oplysninger bliver returneret til os
         #endregion
     }
 }
