@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hillerød_sejlklub
 {
-    internal class Båd
+    internal class Begivenheder
     {
-
     }
 }
