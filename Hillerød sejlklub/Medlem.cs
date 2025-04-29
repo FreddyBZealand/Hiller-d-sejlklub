@@ -11,12 +11,14 @@ namespace Hillerød_sejlklub
         public int MedlemId { get; set; }
         public string Telefonnummer { get; set; }
         public string Email { get; set; }
+        public string GuldMedlem { get; set; }
 
-        public Medlem(int medlemId, string telefonnummer, string email)
+        public Medlem(int medlemId, string telefonnummer, string email, string guldMedlem)
         {
             MedlemId = medlemId;
             Telefonnummer = telefonnummer;
             Email = email;
+            GuldMedlem = guldMedlem;
         }
 
         public void VisInfo()
@@ -24,6 +26,7 @@ namespace Hillerød_sejlklub
             Console.WriteLine($"Medlem ID: {MedlemId}");
             Console.WriteLine($"Telefonnummer: {Telefonnummer}");
             Console.WriteLine($"Email: {Email}");
+            Console.WriteLine($"Medlemsgrad: {GuldMedlem}");
         }
     }
 }
