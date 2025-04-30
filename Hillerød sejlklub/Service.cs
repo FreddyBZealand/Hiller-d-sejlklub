@@ -39,7 +39,7 @@ namespace Hillerød_sejlklub
             private string serviceId
         { 
             get { return _serviceId; } 
-            set {  _id = value; } 
+            set {  _serviceId = value; } 
         }
        
        private string name

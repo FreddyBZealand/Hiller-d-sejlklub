@@ -42,7 +42,7 @@ namespace Hillerød_sejlklub
         #region Properties
         private int bådId 
         { get { return _bådId; } 
-          set { _id = value; }
+          set { _bådId = value; }
         }
         private string Name 
         { get { return _name; } 
