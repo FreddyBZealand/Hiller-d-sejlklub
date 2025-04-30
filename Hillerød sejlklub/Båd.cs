@@ -12,7 +12,7 @@ namespace Hillerød_sejlklub
     {
         #region Instance fields
 
-        public int _id;
+        public int _bådId;
         public string _name;
         public string _description;
         public bool _sailing;
@@ -22,9 +22,9 @@ namespace Hillerød_sejlklub
 
         #region Constructor
 
-            public Båd(int id, string name, string description)
+            public Båd(int bådId, string name, string description)
         {
-            _id = id;
+            _bådId = bådId;
             _name = name;
             _description = description;
         }
@@ -40,8 +40,8 @@ namespace Hillerød_sejlklub
         #endregion
 
         #region Properties
-        private int Id 
-        { get { return _id; } 
+        private int bådId 
+        { get { return _bådId; } 
           set { _id = value; }
         }
         private string Name 

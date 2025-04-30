@@ -10,7 +10,7 @@ namespace Hillerød_sejlklub
     {
         #region Instance fields
         public string _damage;
-        public string _id;
+        public string _serviceId;
         public string _name;
         public string _type;
 
@@ -18,11 +18,11 @@ namespace Hillerød_sejlklub
         #endregion
 
         #region Constructor
-        public Service(string damage, string id, string name, string type)
+        public Service(string damage, string serviceId, string name, string type)
         {
 
             _damage = damage;
-            _id = id;
+            _serviceId = serviceId;
             _name = name;
             _type = type;
 
@@ -36,9 +36,9 @@ namespace Hillerød_sejlklub
             get { return _damage; }
             set { _damage = value; }
         }
-            private string id
+            private string serviceId
         { 
-            get { return _id; } 
+            get { return _serviceId; } 
             set {  _id = value; } 
         }
        
@@ -54,7 +54,7 @@ namespace Hillerød_sejlklub
         #region Methods
         public override string ToString()
         {
-            return $"damage : {damage}, id : {id}, name : {name}, type : {type}";
+            return $"damage : {damage}, id : {serviceId}, name : {name}, type : {type}";
         }
         //Oplysninger bliver returneret til os
         #endregion
