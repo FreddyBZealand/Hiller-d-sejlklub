@@ -23,9 +23,9 @@ namespace Hillerød_sejlklub
 
             List<Båd> både = new List<Båd>
             {
-                 new Båd(12, "Anna", "Sejlbåd"),
-                 new Båd(24, "Victoria", "Yacht"),
-                 new Båd(24, "Victoria", "Yacht")
+                 new Båd(12, "Anna", "Sejlbåd", true),
+                 new Båd(24, "Victoria", "Yacht", true),
+                 new Båd(30, "Clara", "Speedbåd", false)
 
 
             };
@@ -38,7 +38,7 @@ namespace Hillerød_sejlklub
                {
                    new Service("Huld i skrog", 32, "Anna", "Reparation"),
                    new Service("Ødelagt motor", 20, "Victoria", "Reparation"),
-                   new Service("Huld i skrog", 32, "Anna", "Reparation"),
+                   new Service("Skal males", 75, "Clara", "Vedligeholdelse"),
 
 
                };

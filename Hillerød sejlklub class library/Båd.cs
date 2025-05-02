@@ -15,45 +15,58 @@ namespace Hillerød_sejlklub
         public int _bådId;
         public string _name;
         public string _description;
-        public bool _sailing;
+        public bool _eriSøen;
         // Vi skal bruge id, navn og beskrivelse på båd for at finde den, bool er til at se om den er ledig el ej.
-        
+
         #endregion
 
         #region Constructor
 
-            public Båd(int bådId, string name, string description)
+        public Båd(int bådId, string name, string description, bool eriSøen)
         {
             _bådId = bådId;
             _name = name;
             _description = description;
+            _eriSøen = eriSøen;
         }
-             
-        
-        
 
-        
-           
 
-        
+
+
+
+
+
+
 
         #endregion
 
         #region Properties
-        private int bådId 
-        { get { return _bådId; } 
-          set { _bådId = value; }
+        private int bådId
+        { get { return _bådId; }
+            set { _bådId = value; }
         }
-        private string Name 
-        { get { return _name; } 
-          set { _name = value; }
-        
+        private string Name
+        { get { return _name; }
+            set { _name = value; }
+
         }
-        private string Description 
+        private string Description
         { get { return _description; }
-          set { _description = value; }
+            set { _description = value; }
         }
-        
+
+
+        public void SætiSøen()
+        {
+            _eriSøen = true;
+        }
+
+        public void SætpåLand()
+        {
+            _eriSøen = false;
+        }
+
+        //bool metode
 
 
         #endregion
@@ -68,9 +81,11 @@ namespace Hillerød_sejlklub
             Console.WriteLine($"Name : {Name}");
             Console.WriteLine($"bådId : {bådId}");
             Console.WriteLine($"Description : {Description}");
-            Console.WriteLine();
+            Console.WriteLine($"Is sailing : {_eriSøen}");
+           
 
         }
+       
         // Metode til at få vores oplysninger
         #endregion
     }
