@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace Hillerød_sejlklub
 {
-    internal class Blog
+    public class Blog
     {
-        private string Titel { get; set; }
-        private string Indhold { get; set; }
-        private string BilledeSti { get; set; } // f.eks. "billeder/kapsejlads.jpg"
-        private DateTime Dato { get; set; }
+        public string Titel { get; set; }
+        public string Indhold { get; set; }
+        public string BilledeSti { get; set; } // f.eks. "billeder/kapsejlads.jpg"
+        public DateTime Dato { get; set; }
 
-        private Blog(string titel, string indhold, string billedeSti)
+        public Blog(string titel, string indhold, string billedeSti, DateTime dato)
+
         {
             Titel = titel;
             Indhold = indhold;
@@ -21,14 +22,14 @@ namespace Hillerød_sejlklub
             Dato = DateTime.Now;
         }
 
-        private void Rediger(string nytIndhold, string nyBilledeSti)
+        public void Rediger(string nytIndhold, string nyBilledeSti)
         {
             Indhold = nytIndhold;
             BilledeSti = nyBilledeSti;
             Dato = DateTime.Now;
         }
 
-        private void VisIndlæg()
+        public void VisIndlæg()
         {
             Console.WriteLine($"Titel: {Titel}");
             Console.WriteLine($"Dato: {Dato}");

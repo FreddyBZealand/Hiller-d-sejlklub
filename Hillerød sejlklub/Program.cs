@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Hillerød_sejlklub
 {
@@ -22,7 +23,7 @@ namespace Hillerød_sejlklub
 
             List<Båd> båd = new List<Båd>
             {
-                  new Båd(12, "Anna", "Sejlbåd"),
+                 new Båd(12, "Anna", "Sejlbåd"),
                  new Båd(24, "Victoria", "Yacht"),
                  new Båd(24, "Victoria", "Yacht")
 
@@ -32,6 +33,24 @@ namespace Hillerød_sejlklub
             {
                 båd.VisInfo();
             }
+
+
+
+
+
+            List<Blog> blogge = new List<Blog>
+            {
+                new Blog("Kapsejlads", "Kom til årets første kapsejlads på søndag!", "billeder,kapsejlads.jpg", new DateTime(2025, 5, 4)),
+                new Blog("Fællesmorgenmad", "Der er fællesmorgenmad d. 10/6. Tag lidt af hvert med.", "billeder/kapsejlads.jpg", new DateTime(2025, 6, 10)),
+                new Blog("Kapsejlads", "Kom til årets sidste kapsejlads d. 4/10!", "billeder/kapsejlads.jpg", new DateTime(2025, 10, 4))
+
+            };
+                foreach (var blog in blogge)
+            {
+                blog.VisIndlæg();
+            }
+
+
 
             Console.ReadLine(); // Holder konsollen åben
         } 
