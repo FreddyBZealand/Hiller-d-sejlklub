@@ -21,7 +21,7 @@ namespace Hillerød_sejlklub
                 medlem.VisInfo();
             }
 
-            List<Båd> båd = new List<Båd>
+            List<Båd> både = new List<Båd>
             {
                  new Båd(12, "Anna", "Sejlbåd"),
                  new Båd(24, "Victoria", "Yacht"),
@@ -29,29 +29,34 @@ namespace Hillerød_sejlklub
 
 
             };
-               foreach (var båd in båd)
+               foreach (var båd in både)
             {
                 båd.VisInfo();
             }
 
+<<<<<<< HEAD
 
 
 
 
-            List<Blog> blogge = new List<Blog>
+          
+
+
+=======
+            List<Service> services = new List<Service>
+               {
+                   new Service("Huld i skrog", 32, "Anna", "Reparation"),
+                   new Service("Ødelagt motor", 20, "Victoria", "Reparation"),
+                   new Service("Huld i skrog", 32, "Anna", "Reparation"),
+
+
+               };
+            foreach (var service in services)
             {
-                new Blog("Kapsejlads", "Kom til årets første kapsejlads på søndag!", "billeder,kapsejlads.jpg", new DateTime(2025, 5, 4)),
-                new Blog("Fællesmorgenmad", "Der er fællesmorgenmad d. 10/6. Tag lidt af hvert med.", "billeder/kapsejlads.jpg", new DateTime(2025, 6, 10)),
-                new Blog("Kapsejlads", "Kom til årets sidste kapsejlads d. 4/10!", "billeder/kapsejlads.jpg", new DateTime(2025, 10, 4))
-
-            };
-                foreach (var blog in blogge)
-            {
-                blog.VisIndlæg();
+                service.AddService();
             }
 
-
-
+>>>>>>> e395ff71cee5c5a3d243c83a28d48b639a60ac3e
             Console.ReadLine(); // Holder konsollen åben
         } 
     }
