@@ -54,6 +54,7 @@ namespace Hillerød_sejlklub
                 new Blog("Fællesmorgenmad", "Der er fællesmorgenmad d. 10/6. Tag lidt af hvert med.", "billeder/kapsejlads.jpg", new DateTime(2025, 6, 10)),
                 new Blog("Kapsejlads", "Kom til årets sidste kapsejlads d. 4/10!", "billeder/kapsejlads.jpg", new DateTime(2025, 10, 4))
 
+
             };
             foreach (var blog in blogge)
             {

@@ -36,6 +36,7 @@ namespace Hillerød_sejlklub
             Console.WriteLine($"Dato: {Dato}");
             Console.WriteLine($"Beskrivelse: {Beskrivelse}");
             Console.WriteLine($"Antal tilmeldte: {Tilmeldte.Count}");
+            Console.WriteLine();
         }
     }
 }

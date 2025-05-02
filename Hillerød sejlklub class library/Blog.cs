@@ -35,6 +35,7 @@ namespace Hillerød_sejlklub
             Console.WriteLine($"Dato: {Dato}");
             Console.WriteLine($"Indhold: {Indhold}");
             Console.WriteLine($"Billede: {BilledeSti}");
+            Console.WriteLine(); //for mellemrum når vi runner 
         }
     }
 }
