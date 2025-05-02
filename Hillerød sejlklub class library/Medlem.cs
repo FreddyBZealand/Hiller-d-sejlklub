@@ -27,6 +27,7 @@ namespace Hillerød_sejlklub
             Console.WriteLine($"Telefonnummer: {Telefonnummer}");
             Console.WriteLine($"Email: {Email}");
             Console.WriteLine($"Medlemsgrad: {GuldMedlem}");
+            Console.WriteLine();
         }
     }
 }

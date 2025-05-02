@@ -62,6 +62,7 @@ namespace Hillerød_sejlklub
             Console.WriteLine($"ServiceId : {serviceId}");
             Console.WriteLine($"Name : {name}");
             Console.WriteLine($"Type : {type}");
+            Console.WriteLine();
         }
 
         //Oplysninger bliver returneret til os
