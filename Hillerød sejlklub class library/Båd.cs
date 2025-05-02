@@ -82,6 +82,7 @@ namespace Hillerød_sejlklub
             Console.WriteLine($"bådId : {bådId}");
             Console.WriteLine($"Description : {Description}");
             Console.WriteLine($"Is sailing : {_eriSøen}");
+            Console.WriteLine();
            
 
         }
