@@ -34,15 +34,6 @@ namespace Hillerød_sejlklub
                 båd.VisInfo();
             }
 
-<<<<<<< HEAD
-
-
-
-
-          
-
-
-=======
             List<Service> services = new List<Service>
                {
                    new Service("Huld i skrog", 32, "Anna", "Reparation"),
@@ -55,8 +46,8 @@ namespace Hillerød_sejlklub
             {
                 service.AddService();
             }
-
->>>>>>> e395ff71cee5c5a3d243c83a28d48b639a60ac3e
+           
+            
             Console.ReadLine(); // Holder konsollen åben
         } 
     }
