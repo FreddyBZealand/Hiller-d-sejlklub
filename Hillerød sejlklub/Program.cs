@@ -14,14 +14,27 @@ namespace Hillerød_sejlklub
                 new Medlem(3, "11223344", "carla@example.com", "medlem"),
                 new Medlem(4, "44332211", "dan@example.com", "guldMedlem")
             };
-            
+
             foreach (var medlem in medlemmer) //Går igennem hvert medlem i listen medlemmer én ad gangen.
             {
                 medlem.VisInfo();
             }
 
+            List<Båd> båd = new List<Båd>
+            {
+                  new Båd(12, "Anna", "Sejlbåd"),
+                 new Båd(24, "Victoria", "Yacht"),
+                 new Båd(24, "Victoria", "Yacht")
+
+
+            };
+               foreach (var båd in båd)
+            {
+                båd.VisInfo();
+            }
+
             Console.ReadLine(); // Holder konsollen åben
-        }
+        } 
     }
 }
 

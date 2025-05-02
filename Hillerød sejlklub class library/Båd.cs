@@ -61,7 +61,15 @@ namespace Hillerød_sejlklub
         #region Methods
         public override string ToString()
         {
-            return $"name : {Name} - id : {Id} - description : {Description}";  
+            return $"name : {Name} - id : {bådId} - description : {Description}";  
+        }
+        public void VisInfo()
+        {
+            Console.WriteLine($"Name : {Name}");
+            Console.WriteLine($"bådId : {bådId}");
+            Console.WriteLine($"Description : {Description}");
+            Console.WriteLine();
+
         }
         // Metode til at få vores oplysninger
         #endregion

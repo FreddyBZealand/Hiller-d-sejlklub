@@ -8,4 +8,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Hillerød sejlklub class library\Hillerød sejlklub class library.csproj" />
+  </ItemGroup>
+
 </Project>
