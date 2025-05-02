@@ -45,7 +45,8 @@ namespace Hillerød_sejlklub
             {
                 service.AddService();
             }
-
+           
+            
             Console.ReadLine(); // Holder konsollen åben
         } 
     }
