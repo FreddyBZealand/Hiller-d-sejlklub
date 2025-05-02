@@ -14,7 +14,7 @@ namespace Hillerød_sejlklub
                 new Medlem(3, "11223344", "carla@example.com"),
                 new Medlem(4, "44332211", "dan@example.com")
             };
-
+            
             foreach (var medlem in medlemmer) //Går igennem hvert medlem i listen medlemmer én ad gangen.
             {
                 medlem.VisInfo();
