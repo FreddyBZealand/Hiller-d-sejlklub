@@ -10,7 +10,7 @@ namespace Hillerød_sejlklub
     {
         #region Instance fields
         public string _damage;
-        public string _serviceId;
+        public int _serviceId;
         public string _name;
         public string _type;
 
@@ -18,7 +18,7 @@ namespace Hillerød_sejlklub
         #endregion
 
         #region Constructor
-        public Service(string damage, string serviceId, string name, string type)
+        public Service(string damage, int serviceId, string name, string type)
         {
 
             _damage = damage;
@@ -36,7 +36,7 @@ namespace Hillerød_sejlklub
             get { return _damage; }
             set { _damage = value; }
         }
-            private string serviceId
+            private int serviceId
         { 
             get { return _serviceId; } 
             set {  _serviceId = value; } 
@@ -56,6 +56,14 @@ namespace Hillerød_sejlklub
         {
             return $"damage : {damage}, id : {serviceId}, name : {name}, type : {type}";
         }
+        public void AddService()
+        {
+            Console.WriteLine($"Damage : {damage}");
+            Console.WriteLine($"ServiceId : {serviceId}");
+            Console.WriteLine($"Name : {name}");
+            Console.WriteLine($"Type : {type}");
+        }
+
         //Oplysninger bliver returneret til os
         #endregion
     }

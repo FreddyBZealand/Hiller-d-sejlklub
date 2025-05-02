@@ -20,7 +20,7 @@ namespace Hillerød_sejlklub
                 medlem.VisInfo();
             }
 
-            List<Båd> båd = new List<Båd>
+            List<Båd> både = new List<Båd>
             {
                   new Båd(12, "Anna", "Sejlbåd"),
                  new Båd(24, "Victoria", "Yacht"),
@@ -28,9 +28,22 @@ namespace Hillerød_sejlklub
 
 
             };
-               foreach (var båd in båd)
+               foreach (var båd in både)
             {
                 båd.VisInfo();
+            }
+
+            List<Service> services = new List<Service>
+               {
+                   new Service("Huld i skrog", 32, "Anna", "Reparation"),
+                   new Service("Ødelagt motor", 20, "Victoria", "Reparation"),
+                   new Service("Huld i skrog", 32, "Anna", "Reparation"),
+
+
+               };
+            foreach (var service in services)
+            {
+                service.AddService();
             }
 
             Console.ReadLine(); // Holder konsollen åben
