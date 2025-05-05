@@ -20,13 +20,18 @@ namespace Hillerød_sejlklub
             Beskrivelse = beskrivelse;
             Tilmeldte = new List<Medlem>(); //<Medlem> tager fat i vores Medlem.cs
         }
-       
+
         public void TilmeldMedlem(Medlem medlem)
         {
             if (!Tilmeldte.Contains(medlem)) //! betyder ikke. dvs. metoden her siger, hvis medlemmet allerede er tilmeldt. 
             {
                 Tilmeldte.Add(medlem);
                 Console.WriteLine($"{medlem.Email} er tilmeldt {Navn}."); //Hvis et medlem allerede deltager til begivenheden. If tjekker hvis medlemmet allerede er tilmeldt.
+
+            }
+            else
+            {
+                Console.WriteLine($"{medlem.Navn} er allerede tilmeldt {Navn}.");
             }
         }
 
@@ -37,6 +42,17 @@ namespace Hillerød_sejlklub
             Console.WriteLine($"Beskrivelse: {Beskrivelse}");
             Console.WriteLine($"Antal tilmeldte: {Tilmeldte.Count}");
             Console.WriteLine();
+            
+
+
+            foreach (var medlem in Tilmeldte)
+            {
+                Console.WriteLine("Tilmeldte");
+                Console.WriteLine($"- {medlem.Navn} ({medlem.Email})");
+                Console.WriteLine();
+                Console.WriteLine($"- {medlem}");
+                Console.WriteLine();
+            }
         }
     }
 }

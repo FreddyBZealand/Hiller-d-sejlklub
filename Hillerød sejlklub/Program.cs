@@ -10,10 +10,11 @@ namespace Hillerød_sejlklub
         {
             List<Medlem> medlemmer = new List<Medlem>
             {
-                new Medlem(1,"12345678", "anna@example.com", "guldMedlem"),
-                new Medlem(2, "87654321", "brian@example.com", "guldMedlem"),
-                new Medlem(3, "11223344", "carla@example.com", "medlem"),
-                new Medlem(4, "44332211", "dan@example.com", "guldMedlem")
+                new Medlem(1,"12345678", "anna@example.com", true, "Anna"),
+                new Medlem(2, "87654321", "brian@example.com", true, "Brian"),
+                new Medlem(3, "11223344", "carla@example.com",false, "Carla"),
+                new Medlem(4, "44332211", "dan@example.com", true,"Dan")
+                
             };
 
             foreach (var medlem in medlemmer) //Går igennem hvert medlem i listen medlemmer én ad gangen.
@@ -61,7 +62,16 @@ namespace Hillerød_sejlklub
                 blog.VisIndlæg();
             }
 
-
+            List<Begivenhed> begivenheder = new List<Begivenhed>
+            {
+                new Begivenhed("Standerhejsning", new DateTime(2000,5,4), "Hejse stander"),
+                new Begivenhed("Arbejdsdag", new DateTime(2100,10,4), "Male havnen"),
+                new Begivenhed("Sommerfrokost", new DateTime(2050,12,7), "Vi griller")
+            };
+            foreach (var begivenhed in begivenheder)
+            {
+                begivenhed.VisInfo();
+            }
 
             Console.ReadLine(); // Holder konsollen åben
         } 
